@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    // 1. Switch module format to classic standard browser modules
+    "module": "ESNext", 
+    // 2. Change resolution to standard bundler/browser style so it ignores package.json "type"
+    "moduleResolution": "Bundler", 
+    
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "outDir": "dist/renderer",
+    "rootDir": "renderer",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "baseUrl": "./renderer",
+    "paths": {
+      "@shared/*": ["shared/*"]
+    }
+  },
+  "include": [
+    "renderer/**/*"
+  ],
+  "exclude": [
+    "node_modules", 
+    "dist"
+  ]
+}

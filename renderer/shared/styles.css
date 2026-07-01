@@ -1,0 +1,1699 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root{
+    --cards-font-size : 16px; 
+}
+
+html,
+.root,
+body {
+    overflow: hidden;
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.root_inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.root_inner svg {
+    min-width: 30px;
+    max-width: 60px;
+    max-height: 60px;
+    transition: 1s;
+}
+
+section#apps {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    width: 37vw;
+}
+
+
+/* Change width to HEIGHT for a horizontal scrollbar */
+section#apps::-webkit-scrollbar {
+  height: 25px; /* Controls the thickness of the horizontal bar */
+}
+
+section#apps::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+section#apps::-webkit-scrollbar-thumb {
+  background-color: var(--color-opacity-4); 
+  border-radius: 15px; 
+  border: 8px solid transparent; 
+  background-clip: padding-box; /* CRITICAL: This forces the background to shrink inside the transparent border */
+}
+
+
+.app {
+    background-color: transparent;
+    transition: 50ms;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 5px;
+    width: 100px;
+    height: 120px;
+    border-color: var(--color-opacity-10);
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.app p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    width: 100px;
+    line-height: 1.5;
+}
+
+.app:hover,
+.appSelected {
+    outline: 1px solid var(--color-opacity-10);
+}
+
+.mainInfo .usage .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.monitoring {
+    width: 60vw;
+    padding: 20px;
+    border-left: 2px solid var(--color-opacity-2);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.monitoring .hardware {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+section.monitoring .hardware>div {
+    width: 45%;
+    min-height: 280px;
+    height: max-content;
+    border: 2px solid;
+    border-radius: 10px;
+    position: relative;
+    perspective: 1000px;
+}
+
+section.monitoring .hardware>div {
+    border: 2px solid;
+    border-color: var(--color-opacity-2);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 45%;
+}
+
+section.monitoring .hardware>div .front,
+section.monitoring .hardware>div .back {
+    position: absolute;
+    inset: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease;
+}
+
+section.monitoring .hardware>div .back {
+    transform: rotateY(180deg);
+}
+
+section.monitoring .hardware>div:hover .front {
+    transform: rotateY(180deg);
+}
+
+section.monitoring .hardware>div:hover .back {
+    transform: rotateY(0deg);
+}
+
+section.monitoring .hardware>div svg {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+section.monitoring .hardware>div h1 {
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+}
+
+section.monitoring .hardware>div h1 span {
+    font-size: 11px !important;
+    color: var(--color-opacity-7);
+    font-weight: 400;
+}
+
+.info:has(.core) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+}
+
+.core {
+    position: relative;
+    padding: 0;
+    width: 80px;
+    aspect-ratio: 0.85;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid;
+    border-color: var(--color-opacity-5);
+}
+
+.core p {
+    text-align: center;
+}
+
+.core #clock {
+    margin-top: 5px;
+}
+
+.core .bar {
+    position: absolute;
+    margin: 0 !important;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    background-color: var(--color-opacity-5);
+    border-radius: 0 0 8px 8px;
+    transition: 0.5s;
+}
+
+.bg {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.overlay {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    opacity: var(--overlay-opacity);
+    background-color: #000;
+}
+
+.modes {
+    border-radius: 10px;
+    border: 1px solid var(--color-opacity-3);
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 400px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.modes>div {
+    background-color: var(--color-opacity-1);
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hardware>div {
+    transition: 0.5s;
+}
+
+.hardware>div .info>div {
+    min-height: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.hardware>div .info {
+    width: 100%;
+}
+
+.hardware>div:hover {
+    transform: scale(1.02);
+    border-color: var(--color-opacity-2);
+    box-shadow: 0 0 10px var(--color-opacity-2);
+}
+
+.modes>div:hover {
+    transform: scale(1.05);
+}
+
+.modes>div svg {
+    width: 40px;
+    fill: white;
+}
+
+.modes>div button {
+    background: none;
+    border: none;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bar {
+    margin: 5px 0px !important;
+    width: 100%;
+    height: 10px;
+    background-color: var(--color-opacity-1);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.bar>div {
+    height: 100%;
+    background-color: var(--color-opacity-5);
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.active-mode {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--color-opacity-3);
+}
+
+section.monitoring header {
+    width: 100%;
+    padding: 5px 15px 15px 15px;
+    border-bottom: 2px solid var(--color-opacity-2);
+    display: flex;
+    justify-content: space-between;
+}
+
+section.monitoring header>.mode #icon {
+    display: flex;
+    align-items: center;
+}
+
+section.monitoring header>.mode {
+    width: 220px;
+    height: 60px;
+    perspective: 1000px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.mode:hover .wrapper {
+    transform: rotateY(180deg);
+}
+
+.wrapper>h1,
+.wrapper>div {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.wrapper>div {
+    background-color: var(--color-opacity-1);
+}
+
+section.monitoring header>.mode h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    color: var(--color-opacity-10);
+}
+
+.wrapper>h1 {
+    background-color: var(--color-opacity-2);
+    transform: rotateY(180deg);
+}
+
+section.monitoring header>.mode svg {
+    max-width: 40px;
+    fill: var(--color-opacity-10);
+    cursor: pointer;
+}
+
+#settingsIcon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+section.monitoring header>.mode:last-child {
+    margin-left: 20px;
+}
+
+section.monitoring header .rightSide {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section.monitoring header .rightSide div {
+    display: flex;
+    align-items: center;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+section.monitoring header .rightSide svg {
+    min-width: auto;
+}
+
+section.monitoring header .rightSide div p {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--color-opacity-1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+section.monitoring header .rightSide div:has(p#batteryLevel) {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: var(--color-opacity-1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+section.monitoring header .rightSide div:has(p#batteryLevel):hover,
+section.monitoring header .rightSide div p:hover {
+    transform: scale(1.05);
+}
+
+section.monitoring header .rightSide div p#batteryLevel {
+    background: none;
+    padding: 0;
+}
+
+p#time {
+    margin-right: 20px;
+}
+
+section.monitoring header .rightSide>svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-opacity-10);
+}
+
+.blur {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.app img {
+    width: var(--icon-size);
+}
+
+.app p {
+    font-size: var(--font-size);
+}
+
+.bgSelector,
+.bgDeleter,
+.appNameInput {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    height: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bgSelector>div,
+.bgDeleter>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bgSelector img,
+.bgDeleter img {
+    border: 2px solid var(--color-opacity-10);
+    border-radius: 5px;
+    width: max-content;
+    height: 80%;
+    max-width: 80% !important;
+    max-height: 80% !important;
+}
+
+.bgSelector svg,
+.bgDeleter svg {
+    width: 60px;
+    fill: var(--color-opacity-10);
+    padding: 15px;
+    border-radius: 50%;
+    background-color: var(--color-opacity-1);
+}
+
+.bgSelector button,
+.bgDeleter button {
+    width: fit-content;
+    padding: 15px 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-opacity-1);
+    color: var(--color-opacity-10);
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bgSelector svg,
+.bgDeleter svg {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bgSelector svg:hover,
+.bgDeleter svg:hover {
+    background-color: var(--color-opacity-4);
+    transform: scale(1.05);
+}
+
+.bgSelector button:hover,
+.bgDeleter button:hover {
+    background-color: var(--color-opacity-4);
+    transform: scale(1.1);
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.loading .loader {
+    margin: 50px 0;
+    width: 80px;
+    height: 40px;
+    --_g: no-repeat radial-gradient(circle closest-side, var(--color-opacity-10) 90%, #0000);
+    background:
+        var(--_g) 0% 50%,
+        var(--_g) 50% 50%,
+        var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+}
+
+.loading h1 {
+    padding-right: 10px;
+    font-size: 3.5em;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    color: var(--color-opacity-10);
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid currentColor;
+    animation:
+        typing 2.5s steps(10),
+        blink .8s step-end infinite;
+}
+
+.loading p {
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    color: var(--color-opacity-10);
+}
+
+.loading button {
+    width: 400px;
+    height: 80px;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: 'Roboto';
+    background-color: var(--color-opacity-1);
+    color: var(--color-opacity-10);
+    text-align: center;
+    border: none;
+}
+
+.settings,
+.appDeleter,
+.settingsLoading,
+.appNameInput,
+.bgSelector, 
+.bgDeleter {
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+    min-height: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#appsToDelete {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: baseline;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#appsToDelete .app img {
+    width: 40px;
+}
+
+#appsToDelete .app p {
+    font-size: 0.9em;
+}
+
+.settings>h1,
+.appDeleter>h1,
+settingsLoading>h1 {
+    font-size: 2em;
+    color: white;
+}
+
+#swatch .info {
+    border-top: 1px solid black;
+}
+
+.settings>div {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    width: 100%;
+    height: 100%;
+}
+
+.settings .inputs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.settings p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.settings input[type="number"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 70px;
+}
+
+.settings input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.settings button,
+.appDeleter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#bgSettings {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.settings>div>div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#swatch {
+    background: white;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: column;
+}
+
+#swatch .info {
+    padding: 1em;
+}
+
+#swatch h1 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#swatch h2 {
+    font-weight: normal;
+    margin: 0;
+}
+
+input[type="color"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    height: 10em;
+    padding: 0;
+    width: 10em;
+}
+
+*:focus {
+    outline-color: var(--color-opacity-10);
+}
+
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-color-swatch {
+    border: 0;
+    border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner {
+    border: 0;
+}
+
+::-moz-focus-inner {
+    padding: 0;
+}
+
+section.monitoring .percore {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+}
+
+.cores {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+
+#backToMain {
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--color-opacity-2);
+    color: var(--color-opacity-10);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cpu-card .back:hover {
+    cursor: pointer;
+}
+
+.cpu-card .back h1 {
+    animation: zooming 0.5s ease-in-out alternate infinite;
+}
+
+@keyframes zooming {
+    from { transform: scale(1); }
+    to   { transform: scale(1.05); }
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to   { width: 10ch }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+@keyframes l3 {
+    20% { background-position: 0% 0%,   50% 50%,  100% 50% }
+    40% { background-position: 0% 100%, 50% 0%,   100% 50% }
+    60% { background-position: 0% 50%,  50% 100%, 100% 0%  }
+    80% { background-position: 0% 50%,  50% 50%,  100% 100%}
+}
+
+/* ==========================================================================
+   MISSION CONTROL - SETTINGS MENU (GLASSMORPHISM STYLE)
+   ========================================================================== */
+
+.settings,
+.appDeleter,
+.settingsLoading,
+.appNameInput,
+.bgSelector, 
+.bgDeleter,
+.modes {
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 800px;
+    min-height: 600px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: rgba(20, 20, 20, 0.45);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    gap: 25px;
+    color: #ffffff;
+}
+
+.settings h1,
+.appDeleter h1 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    letter-spacing: 0.5px;
+}
+
+#cardsColorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#cardsColorPicker:hover {
+    transform: scale(1.05);
+}
+
+#cardsColorPicker::-webkit-color-swatch {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#cardsColorPicker::-moz-color-swatch {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.settings p {
+    white-space: nowrap;
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    flex: 1;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    background: #e0e0e0;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    transform: scale(1.1);
+    background: #e0e0e0;
+}
+
+input[type="number"]:disabled {
+    width: 45px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #ffffff;
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.85rem;
+    padding: 4px 0;
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:disabled::-webkit-outer-spin-button,
+input[type="number"]:disabled::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.backgroundSettings .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.buttons button,
+.appDeleter button {
+    white-space: nowrap;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.settings button:hover,
+.appDeleter button:hover {
+    transition: 0.5s ease;
+    transform: scale(1.05);
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.buttons button:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#bgDeleteBtn:hover,
+#appsDeleteBtn:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.4);
+    color: #fca5a5;
+}
+
+.settings header,
+.appDeleter header {
+    width: 100%;
+    height: 70px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.settings>div {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.settings header button {
+    width: max-content;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#appsSettings, #sensorSettings {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.appNameInput h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: inherit;
+}
+
+.appNameInput input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.appNameInput button {
+    width: max-content;
+    white-space: nowrap;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.appNameInput {
+    padding: 40px;
+}
+
+#bgSelected {
+    user-select: none;
+}
+
+.ai-matrix-loader {
+    padding: 40px 10px 40px 10px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    border-radius: 10px;
+}
+
+.digit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 0 5px #FFF;
+    animation:
+        matrix-fall 2s infinite,
+        matrix-flicker 0.5s infinite;
+    opacity: 0;
+}
+
+.digit:nth-child(1) { animation-delay: 0.1s; }
+.digit:nth-child(2) { animation-delay: 0.3s; }
+.digit:nth-child(3) { animation-delay: 0.5s; }
+.digit:nth-child(4) { animation-delay: 0.7s; }
+.digit:nth-child(5) { animation-delay: 0.9s; }
+.digit:nth-child(6) { animation-delay: 1.1s; }
+.digit:nth-child(7) { animation-delay: 1.3s; }
+.digit:nth-child(8) { animation-delay: 1.5s; }
+.digit:nth-child(9) { animation-delay: 1.7s; }
+
+.glow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(0deg,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 0) 100%);
+}
+
+@keyframes matrix-fall {
+    0%      { transform: translateY(-50px) rotateX(90deg);  opacity: 0;   }
+    20%,80% { transform: translateY(0)     rotateX(0deg);   opacity: 0.8; }
+    100%    { transform: translateY(50px)  rotateX(-90deg); opacity: 0;   }
+}
+
+@keyframes matrix-flicker {
+    0%,19%,21%,100% { opacity: 0.8; }
+    20%             { opacity: 0.2; }
+}
+
+@keyframes matrix-pulse {
+    0%,100% { opacity: 0.3; }
+    50%     { opacity: 0.7; }
+}
+
+.appNameInput {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.appNameInput>div {
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.appNameInput>div>input {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.appNameInput>div>button {
+    width: 60%;
+}
+
+.settingsLoading {
+    padding: 0;
+    height: 600px;
+}
+
+/* ==========================================================================
+   RESPONSIVE SCALING  —  IMPROVED
+   
+   Two independent scales replace the old single --monitor-scale:
+     --ui-scale   : drives all layout measurements (padding, gaps, sizes)
+     --font-scale : drives all font sizes independently
+   
+   clamp() on every measurement = smooth, continuous scaling with hard
+   minimum and maximum guards so nothing ever becomes unusably tiny or huge.
+   
+   Breakpoints cover: compact laptop → HD → FHD (designed size) → QHD → 4K
+   plus an ultra-wide correction for very wide but not very tall viewports.
+   ========================================================================== */
+
+:root {
+    --ui-scale: 1;
+    --font-scale: 1;
+}
+
+/* Compact laptops / 768p screens */
+@media (max-width: 1366px), (max-height: 768px) {
+    :root { --ui-scale: 0.82; --font-scale: 0.88; }
+}
+
+/* Standard HD (1280–1600 wide, 800–900 tall) */
+@media (min-width: 1367px) and (max-width: 1600px) and (min-height: 769px) {
+    :root { --ui-scale: 0.92; --font-scale: 0.94; }
+}
+
+/* FHD 1920×1080 — the designed-for resolution, scale stays at 1 */
+
+/* QHD / 2K */
+@media (min-width: 1921px) and (max-width: 2559px) {
+    :root { --ui-scale: 1.10; --font-scale: 1.06; }
+}
+
+/* 4K / UHD */
+@media (min-width: 2560px) {
+    :root { --ui-scale: 1.22; --font-scale: 1.14; }
+}
+
+/* Ultra-wide correction: very wide but short (e.g. 3440×1440 or 2560×1080) */
+@media (min-width: 2560px) and (max-height: 1080px) {
+    :root { --ui-scale: 1.08; --font-scale: 1.04; }
+}
+
+
+/* ==========================================================================
+   ROOT INNER
+   ========================================================================== */
+
+.root_inner {
+    padding: clamp(10px, calc(20px * var(--ui-scale)), 32px);
+}
+
+.root_inner svg {
+    min-width: clamp(20px, calc(30px * var(--ui-scale)), 40px);
+    max-width: clamp(36px, calc(60px * var(--ui-scale)), 90px);
+    max-height: clamp(36px, calc(60px * var(--ui-scale)), 90px);
+}
+
+
+/* ==========================================================================
+   APP GRID
+   ========================================================================== */
+
+section#apps {
+    padding: 5px 0 5px 1px;
+    width: clamp(160px, 37vw, 37vw);
+    column-gap: clamp(12px, calc(30px * var(--ui-scale)), 48px);
+    row-gap: clamp(8px,  calc(20px * var(--ui-scale)), 32px);
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.app {
+    scroll-snap-align: start;
+    width:  clamp(72px,  calc(100px * var(--ui-scale)), 140px);
+    height: clamp(88px,  calc(120px * var(--ui-scale)), 168px);
+    padding: clamp(6px, calc(10px * var(--ui-scale)), 16px)
+             clamp(3px, calc(5px  * var(--ui-scale)),  8px);
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    border-radius: clamp(6px, calc(10px * var(--ui-scale)), 14px);
+}
+
+.app img {
+    width:  clamp(24px, calc(var(--icon-size) * var(--ui-scale)), 128px);
+}
+
+.app p {
+    font-size: clamp(10px, calc(var(--font-size) * var(--font-scale)), 18px);
+    width: clamp(72px, calc(90px * var(--ui-scale)), 100px);
+    line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   MONITORING SECTION
+   ========================================================================== */
+
+section.monitoring {
+    width: clamp(320px, 60vw, 1200px);
+    padding: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    padding-left: calc(3vw + clamp(10px, calc(10px * var(--ui-scale)), 32px)) !important;
+    gap: clamp(16px, calc(30px * var(--ui-scale)), 48px);
+}
+
+/* Hardware cards */
+section.monitoring .hardware>div,
+section.monitoring .hardware>div .front,
+section.monitoring .hardware>div .back {
+    flex: 0 0 45%;
+    min-height: clamp(220px, calc(310px * var(--ui-scale)), 480px);
+    padding: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    border-radius: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+section.monitoring .hardware>div {
+    width: 45%;
+}
+
+section.monitoring .hardware>div h1 {
+    font-size: clamp(14px, calc(1.75 * var(--cards-font-size) * var(--font-scale)), 36px);
+    font-weight: 600;
+    margin-bottom: clamp(3px, calc(5px * var(--ui-scale)), 10px);
+    white-space: nowrap;
+    gap: 8px;
+}
+
+/* Override the base !important 11px — scale it properly */
+section.monitoring .hardware>div h1 span {
+    font-size: clamp(9px, calc(0.72 * var(--cards-font-size) * var(--font-scale)), 14px) !important;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 55%;
+}
+
+.hardware>div .info>div {
+    margin: clamp(5px, calc(9px * var(--ui-scale)), 14px) 0;
+    font-size: clamp(11px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+    min-height: clamp(12px, calc(18px * var(--ui-scale)), 28px);
+}
+
+.hardware>div .info p,
+.hardware>div .info span {
+    font-size: clamp(10px, calc(0.9375 * var(--cards-font-size) * var(--font-scale)), 18px);
+}
+
+/* Progress bars */
+.bar {
+    height: clamp(6px,  calc(10px * var(--ui-scale)), 16px);
+    min-height: unset !important;
+    margin: clamp(4px, calc(8px * var(--ui-scale)), 14px) 0 !important;
+}
+
+/* Header */
+section.monitoring header {
+    padding: clamp(3px,  calc(5px  * var(--ui-scale)),  8px)
+             clamp(8px,  calc(15px * var(--ui-scale)), 24px)
+             clamp(8px,  calc(15px * var(--ui-scale)), 24px);
+}
+
+section.monitoring header>.mode {
+    width:  clamp(140px, calc(220px * var(--ui-scale)), 320px);
+    height: clamp(40px,  calc(60px  * var(--ui-scale)),  90px);
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    padding: clamp(3px, calc(5px  * var(--ui-scale)),  8px)
+             clamp(8px, calc(15px * var(--ui-scale)), 24px);
+}
+
+section.monitoring header>.mode h1 {
+    font-size: clamp(12px, calc(1.5 * var(--cards-font-size) * var(--font-scale)), 28px);
+}
+
+section.monitoring header .rightSide {
+    gap: clamp(10px, calc(20px * var(--ui-scale)), 32px);
+}
+
+section.monitoring header .rightSide div p {
+    padding: clamp(3px, calc(5px  * var(--ui-scale)),  8px)
+             clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    font-size: clamp(10px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+}
+
+section.monitoring header .rightSide svg,
+section.monitoring header .rightSide>svg {
+    width:  clamp(14px, calc(20px * var(--ui-scale)), 32px);
+    height: clamp(14px, calc(20px * var(--ui-scale)), 32px);
+}
+
+
+/* ==========================================================================
+   PER-CORE VIEW
+   ========================================================================== */
+
+.info:has(.core) {
+    grid-template-columns: repeat(5, 1fr);
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+.core {
+    width: clamp(52px, calc(80px * var(--ui-scale)), 120px);
+    gap:   clamp(3px,  calc(5px  * var(--ui-scale)),   8px);
+    border-radius: clamp(5px, calc(8px * var(--ui-scale)), 12px);
+}
+
+.core p {
+    font-size: clamp(9px, calc(0.8125 * var(--cards-font-size) * var(--font-scale)), 14px);
+}
+
+.core #clock {
+    margin-top: clamp(3px, calc(5px * var(--ui-scale)), 8px);
+}
+
+.core .bar {
+    border-radius: 0 0
+        clamp(5px, calc(8px * var(--ui-scale)), 12px)
+        clamp(5px, calc(8px * var(--ui-scale)), 12px);
+}
+
+#backToMain {
+    padding: clamp(6px,  calc(10px * var(--ui-scale)), 16px)
+             clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    font-size: clamp(10px, calc(var(--cards-font-size) * var(--font-scale)), 18px);
+    border-radius: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+
+/* ==========================================================================
+   MODES SELECTOR
+   ========================================================================== */
+
+.modes {
+    width:  clamp(300px, 55vw, 900px);
+    height: clamp(260px, calc(400px * var(--ui-scale)), 580px);
+    padding: clamp(20px, calc(40px * var(--ui-scale)), 64px);
+    margin-top: clamp(10px, calc(20px * var(--ui-scale)), 32px);
+    border-radius: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+.modes>div {
+    padding: clamp(10px, calc(15px * var(--ui-scale)), 24px)
+             clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    border-radius: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+.modes>div svg {
+    width: clamp(24px, calc(40px * var(--ui-scale)), 60px);
+}
+
+.modes>div button {
+    font-size: clamp(12px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+}
+
+
+/* ==========================================================================
+   SETTINGS PANELS
+   ========================================================================== */
+
+.settings,
+.appDeleter,
+.appNameInput,
+.bgSelector,
+.bgDeleter {
+    border : 1px solid var(--color-opacity-1);
+    width: clamp(300px, 55vw, 900px);
+    min-height: clamp(300px, calc(400px * var(--ui-scale)), 640px);
+    padding: clamp(16px, calc(30px * var(--ui-scale)), 48px);
+    gap: clamp(14px, calc(25px * var(--ui-scale)), 40px);
+    border-radius: clamp(10px, calc(16px * var(--ui-scale)), 24px);
+}
+
+.settings h1,
+.appDeleter h1 {
+    font-size: clamp(14px, calc(1.6 * var(--cards-font-size) * var(--font-scale)), 30px);
+}
+
+.settings p {
+    font-size: clamp(10px, calc(0.9375 * var(--cards-font-size) * var(--font-scale)), 18px);
+}
+
+.settings .inputs {
+    gap: clamp(8px, calc(15px * var(--ui-scale)), 24px);
+}
+
+.settings input[type="number"] {
+    max-width: clamp(44px, calc(70px * var(--ui-scale)), 100px);
+    padding: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    font-size: clamp(12px, calc(1.125 * var(--cards-font-size) * var(--font-scale)), 22px);
+}
+
+.settings button,
+.appDeleter button {
+    padding: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    font-size: clamp(12px, calc(1.125 * var(--cards-font-size) * var(--font-scale)), 22px);
+}
+
+.backgroundSettings .buttons {
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}
+
+.buttons button,
+.appDeleter button {
+    padding: clamp(5px,  calc(8px  * var(--ui-scale)), 14px)
+             clamp(10px, calc(16px * var(--ui-scale)), 26px);
+    font-size: clamp(10px, calc(0.8125 * var(--cards-font-size) * var(--font-scale)), 16px);
+}
+
+.settings header,
+.appDeleter header {
+    height: clamp(50px, calc(70px * var(--ui-scale)), 110px);
+    padding-bottom: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+}
+
+.settings header button {
+    padding: clamp(6px,  calc(10px * var(--ui-scale)), 16px)
+             clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    font-size: clamp(12px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+}
+
+#cardsColorPicker {
+    width:  clamp(28px, calc(40px * var(--ui-scale)), 60px);
+    height: clamp(28px, calc(40px * var(--ui-scale)), 60px);
+}
+
+input[type="color"] {
+    height: clamp(60px,  calc(100px * var(--ui-scale)), 160px);
+    width:  clamp(60px,  calc(100px * var(--ui-scale)), 160px);
+}
+
+input[type="range"] {
+    height: clamp(3px, calc(4px * var(--ui-scale)), 6px);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width:  clamp(8px, calc(12px * var(--ui-scale)), 18px);
+    height: clamp(8px, calc(12px * var(--ui-scale)), 18px);
+}
+
+input[type="range"]::-moz-range-thumb {
+    width:  clamp(8px, calc(12px * var(--ui-scale)), 18px);
+    height: clamp(8px, calc(12px * var(--ui-scale)), 18px);
+}
+
+input[type="number"]:disabled {
+    width: clamp(34px, calc(45px * var(--ui-scale)), 70px);
+    padding: clamp(2px, calc(4px * var(--ui-scale)), 6px) 0;
+    font-size: clamp(10px, calc(0.8125 * var(--cards-font-size) * var(--font-scale)), 14px);
+}
+
+#appsToDelete {
+    gap: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+}
+
+#appsToDelete .app img {
+    width:  clamp(28px, calc(40px * var(--ui-scale)), 64px);
+}
+
+#appsToDelete .app p {
+    font-size: clamp(10px, calc(0.875 * var(--cards-font-size) * var(--font-scale)), 16px);
+}
+
+#appsSettings, #sensorSettings {
+    gap: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+}
+
+.settings>div {
+    padding: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+    gap: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+}
+
+.settings>div>div {
+    gap: clamp(16px, calc(30px * var(--ui-scale)), 48px);
+}
+
+.appNameInput h1 {
+    font-size: clamp(16px, calc(1.75 * var(--cards-font-size) * var(--font-scale)), 36px);
+    padding-bottom: clamp(12px, calc(20px * var(--ui-scale)), 32px);
+}
+
+.appNameInput input {
+    padding: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    font-size: clamp(12px, calc(1.125 * var(--cards-font-size) * var(--font-scale)), 22px);
+}
+
+.appNameInput>div {
+    gap: clamp(16px, calc(30px * var(--ui-scale)), 48px);
+}
+
+.appNameInput>div>input {
+    padding: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+    font-size: clamp(12px, calc(1.125 * var(--cards-font-size) * var(--font-scale)), 22px);
+}
+
+
+/* ==========================================================================
+   LOADING SCREEN
+   ========================================================================== */
+
+.loading h1 {
+    font-size: clamp(24px, calc(3.125 * var(--cards-font-size) * var(--font-scale)), 72px);
+}
+
+.loading p {
+    font-size: clamp(12px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+}
+
+.loading button {
+    width:  clamp(200px, calc(400px * var(--ui-scale)), 640px);
+    height: clamp(50px,  calc(80px  * var(--ui-scale)), 120px);
+    font-size: clamp(12px, calc(var(--cards-font-size) * var(--font-scale)), 20px);
+}
+
+
+/* ==========================================================================
+   AI MATRIX LOADER
+   ========================================================================== */
+
+.ai-matrix-loader {
+    padding: clamp(20px, calc(40px * var(--ui-scale)), 64px)
+             clamp(5px,  calc(10px * var(--ui-scale)), 16px);
+    height: 100%;
+    gap: clamp(3px, calc(5px * var(--ui-scale)), 8px);
+}
+
+.digit {
+    font-size: clamp(18px, calc(2 * var(--cards-font-size) * var(--font-scale)), 48px);
+}
+
+
+/* ==========================================================================
+   SETTINGS LOADING
+   ========================================================================== */
+
+.settingsLoading {
+    height: clamp(360px, calc(600px * var(--ui-scale)), 960px);
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   BLUR OVERLAY
+   ========================================================================== */
+
+.blur {
+    backdrop-filter: blur(clamp(3px, calc(5px * var(--ui-scale)), 10px));
+}
+
+.settings header .buttons {
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, calc(10px * var(--ui-scale)), 16px);
+}

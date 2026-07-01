@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" href="../shared/styles.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="root">
+        <video class="bg" autoplay muted loop playsinline preload="auto"></video>
+        <img alt="BackGround" class="bg">
+        <div class="overlay"></div>
+        <div class="blur"></div>        
+
+        <div class="root_inner">
+            <section id="apps"></section>
+            <section class="monitoring">
+                <header>
+                    <div class="mode">
+                        <div class="wrapper">
+                            <h1>Sbe7 el nour</h1>
+                            <div>
+                                <div id="icon">
+
+                                </div>
+                                <h1 id="mode"></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightSide">
+
+                        <div class="time">
+                            <p id="time"></p>
+                            <p id="date"></p>
+                        </div>
+                        <div class="battery">
+                            <div id="batteryIcon"></div>
+                            <p id="batteryLevel"></p>
+                        </div>
+                    </div>
+                </header>
+                <div class="hardware">
+                    <div class="cpu-card">
+                        <div class="front">
+                            <h1>Processor <span id="cpuName"></span></h1>
+                            <div class="info">
+                                <div>
+                                    <p>Usage</p>
+                                    <p id="cpuUsage"></p>
+                                </div>
+                                <div class="bar">
+                                    <div id="cpuUsageBar"></div>
+                                </div>
+                                <div>
+                                    <p>Clock</p>
+                                    <p id="cpuClock"></p>
+                                </div>
+                                <div class="bar">
+                                    <div id="cpuClockBar"></div>
+                                </div>
+                                <div>
+                                    <p>Temperature</p>
+                                    <p id="cpuTemp"></p>
+                                </div>
+                                <div class="bar">
+                                    <div id="cpuTempBar"></div>
+                                </div>
+                                <div>
+                                    <p>--</p>
+                                    <p>--</p>
+                                </div>
+                                <div class="bar" style="background: transparent;"></div>
+                                <div>
+                                    <p>Power</p>
+                                    <p id="cpuPower"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="back" style="display: flex; align-items: center; justify-content: center;">
+                            <h1 style="text-align: center" id="perCoreTitle">Click to see per core infos</h1>
+                        </div>
+                    </div>
+                    <div id="gpuCard">
+   
+                    </div>
+                    <div>
+                        <h1>Ram Memory</h1>
+                        <div class="info">
+                            <div>
+                                <p>Ram Usage</p>
+                                <p id="ramUsage"></p>
+                            </div>
+                            <div class="bar">
+                                <div id="ramUsageBar"></div>
+                            </div>
+                            <div>
+                                <p>Ram Available</p>
+                                <p id="ramAvailable"></p>
+                            </div>
+                            <div class="bar">
+                                <div id="ramAvailableBar"></div>
+                            </div>
+                            <div>
+                                <p>--</p>
+                                <p>--</p>
+                            </div>
+                            <div class="bar" style="background: transparent;"></div>
+                            <div>
+                                <p>Disc Usage</p>
+                                <p id="discUsage"></p>
+                            </div>
+                            <div class="bar">
+                                <div id="discUsageBar"></div>
+                            </div>
+                            <div>
+                                <p>Free Space</p>
+                                <p id="discFree">
+
+                                </p>
+                            </div>
+                            <div class="bar" style="background-color: transparent;"></div>
+
+                        </div>
+                    </div>
+                    <div id="fansCard">
+                        
+                    </div>
+                </div>
+                <div class="loading">
+                    <h1>Run Hwinfo</h1>
+                    <p>No data recieved. please run Hwinfo and refresh the desktop to monitor the hardware</p>
+                    <div class="loader">
+                    </div>
+                    <button id="refreshButton">Refresh The App</button>
+                </div>
+
+                <div class="loading" id="sensorError">
+                    <h1>Sensor Mappning Error</h1>
+                    <p id="error-label"></p>
+                    <div class="loader">
+                    </div>
+                    <button onclick="window.location.reload()">Click to Retry</button>
+                </div>
+
+                <div class="loading" id="sensorMappingWaiting">
+                    <h1>Mapping The sensors </h1>
+                    <p id="error-label">We are currently extracting the sensors necessary for the hardware monitoring. Please wait a few seconds</p>
+                    <div class="loader">
+                    </div>
+                </div>
+
+
+                <div class="percore">
+                    <header>
+                        <h1>Per Core Information</h1>
+                        <button id="backToMain">Back To Main Info</button>
+                    </header>
+                    <div class="cores">
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script type="module" src="./scripts/index.js"></script>
+    <script type="module" src="../shared/elements.js"></script>
+</body>
+
+</html>

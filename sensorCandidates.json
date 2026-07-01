@@ -1,0 +1,3234 @@
+[
+  {
+    "index": 0,
+    "label": "Virtual Memory Committed",
+    "unit": "MB",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 1,
+    "label": "Virtual Memory Available",
+    "unit": "MB",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 2,
+    "label": "Virtual Memory Load",
+    "unit": "%",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 3,
+    "label": "Physical Memory Used",
+    "unit": "MB",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 4,
+    "label": "Physical Memory Available",
+    "unit": "MB",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 5,
+    "label": "Physical Memory Load",
+    "unit": "%",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 6,
+    "label": "Page File Usage",
+    "unit": "%",
+    "type": "Other",
+    "group": "System: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 7,
+    "label": "P-core 0 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 8,
+    "label": "P-core 1 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 9,
+    "label": "P-core 2 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 10,
+    "label": "P-core 3 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 11,
+    "label": "P-core 4 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 12,
+    "label": "P-core 5 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 13,
+    "label": "E-core 6 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 14,
+    "label": "E-core 7 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 15,
+    "label": "E-core 8 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 16,
+    "label": "E-core 9 VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 17,
+    "label": "Uncore VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 18,
+    "label": "SA VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 19,
+    "label": "P-core 0 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 20,
+    "label": "P-core 1 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 21,
+    "label": "P-core 2 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 22,
+    "label": "P-core 3 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 23,
+    "label": "P-core 4 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 24,
+    "label": "P-core 5 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 25,
+    "label": "E-core 6 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 26,
+    "label": "E-core 7 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 27,
+    "label": "E-core 8 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 28,
+    "label": "E-core 9 Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 29,
+    "label": "Bus Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 30,
+    "label": "Ring/LLC Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 31,
+    "label": "P-core 0 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 32,
+    "label": "P-core 0 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 33,
+    "label": "P-core 1 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 34,
+    "label": "P-core 1 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 35,
+    "label": "P-core 2 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 36,
+    "label": "P-core 2 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 37,
+    "label": "P-core 3 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 38,
+    "label": "P-core 3 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 39,
+    "label": "P-core 4 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 40,
+    "label": "P-core 4 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 41,
+    "label": "P-core 5 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 42,
+    "label": "P-core 5 T1 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 43,
+    "label": "E-core 6 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 44,
+    "label": "E-core 7 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 45,
+    "label": "E-core 8 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 46,
+    "label": "E-core 9 T0 Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 47,
+    "label": "Average Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 48,
+    "label": "P-core 0 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 49,
+    "label": "P-core 0 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 50,
+    "label": "P-core 1 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 51,
+    "label": "P-core 1 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 52,
+    "label": "P-core 2 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 53,
+    "label": "P-core 2 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 54,
+    "label": "P-core 3 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 55,
+    "label": "P-core 3 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 56,
+    "label": "P-core 4 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 57,
+    "label": "P-core 4 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 58,
+    "label": "P-core 5 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 59,
+    "label": "P-core 5 T1 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 60,
+    "label": "E-core 6 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 61,
+    "label": "E-core 7 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 62,
+    "label": "E-core 8 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 63,
+    "label": "E-core 9 T0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 64,
+    "label": "Max CPU/Thread Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 65,
+    "label": "Total CPU Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 66,
+    "label": "On-Demand Clock Modulation",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 67,
+    "label": "P-core 0 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 68,
+    "label": "P-core 0 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 69,
+    "label": "P-core 1 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 70,
+    "label": "P-core 1 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 71,
+    "label": "P-core 2 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 72,
+    "label": "P-core 2 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 73,
+    "label": "P-core 3 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 74,
+    "label": "P-core 3 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 75,
+    "label": "P-core 4 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 76,
+    "label": "P-core 4 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 77,
+    "label": "P-core 5 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 78,
+    "label": "P-core 5 T1 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 79,
+    "label": "E-core 6 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 80,
+    "label": "E-core 7 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 81,
+    "label": "E-core 8 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 82,
+    "label": "E-core 9 T0 Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 83,
+    "label": "Total CPU Utility",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 84,
+    "label": "P-core 0 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 85,
+    "label": "P-core 1 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 86,
+    "label": "P-core 2 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 87,
+    "label": "P-core 3 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 88,
+    "label": "P-core 4 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 89,
+    "label": "P-core 5 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 90,
+    "label": "E-core 6 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 91,
+    "label": "E-core 7 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 92,
+    "label": "E-core 8 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 93,
+    "label": "E-core 9 Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 94,
+    "label": "Uncore Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H",
+    "sensorId": 4026532608
+  },
+  {
+    "index": 95,
+    "label": "P-core 0",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 96,
+    "label": "P-core 1",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 97,
+    "label": "P-core 2",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 98,
+    "label": "P-core 3",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 99,
+    "label": "P-core 4",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 100,
+    "label": "P-core 5",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 101,
+    "label": "E-core 6",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 102,
+    "label": "E-core 7",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 103,
+    "label": "E-core 8",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 104,
+    "label": "E-core 9",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 105,
+    "label": "P-core 0 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 106,
+    "label": "P-core 1 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 107,
+    "label": "P-core 2 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 108,
+    "label": "P-core 3 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 109,
+    "label": "P-core 4 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 110,
+    "label": "P-core 5 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 111,
+    "label": "E-core 6 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 112,
+    "label": "E-core 7 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 113,
+    "label": "E-core 8 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 114,
+    "label": "E-core 9 Distance to TjMAX",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 115,
+    "label": "CPU Package",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 116,
+    "label": "Core Max",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 117,
+    "label": "P-core 0 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 118,
+    "label": "P-core 1 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 119,
+    "label": "P-core 2 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 120,
+    "label": "P-core 3 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 121,
+    "label": "P-core 4 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 122,
+    "label": "P-core 5 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 123,
+    "label": "E-core 6 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 124,
+    "label": "E-core 7 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 125,
+    "label": "E-core 8 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 126,
+    "label": "E-core 9 Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 127,
+    "label": "P-core 0 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 128,
+    "label": "P-core 1 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 129,
+    "label": "P-core 2 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 130,
+    "label": "P-core 3 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 131,
+    "label": "P-core 4 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 132,
+    "label": "P-core 5 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 133,
+    "label": "E-core 6 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 134,
+    "label": "E-core 7 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 135,
+    "label": "E-core 8 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 136,
+    "label": "E-core 9 Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 137,
+    "label": "P-core 0 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 138,
+    "label": "P-core 1 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 139,
+    "label": "P-core 2 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 140,
+    "label": "P-core 3 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 141,
+    "label": "P-core 4 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 142,
+    "label": "P-core 5 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 143,
+    "label": "E-core 6 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 144,
+    "label": "E-core 7 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 145,
+    "label": "E-core 8 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 146,
+    "label": "E-core 9 Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 147,
+    "label": "Package/Ring Thermal Throttling",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 148,
+    "label": "Package/Ring Critical Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 149,
+    "label": "Package/Ring Power Limit Exceeded",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: DTS",
+    "sensorId": 4026532864
+  },
+  {
+    "index": 150,
+    "label": "CPU Package",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 151,
+    "label": "CPU IA Cores",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 152,
+    "label": "CPU GT Cores (Graphics)",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 153,
+    "label": "iGPU VID",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 154,
+    "label": "IA Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 155,
+    "label": "GT Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 156,
+    "label": "CLR (CBo/LLC/Ring) Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 157,
+    "label": "GT Media Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 158,
+    "label": "SA Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 159,
+    "label": "L2 E-core Voltage Offset",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 160,
+    "label": "VDDQ TX Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 161,
+    "label": "VR VCC Current (SVID IOUT)",
+    "unit": "A",
+    "type": "Current",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 162,
+    "label": "CPU Package Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 163,
+    "label": "IA Cores Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 164,
+    "label": "GT Cores Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 165,
+    "label": "Total System Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 166,
+    "label": "System Agent Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 167,
+    "label": "Rest-of-Chip Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 168,
+    "label": "PCH Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 169,
+    "label": "PL1 Power Limit (Static)",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 170,
+    "label": "PL1 Power Limit (Dynamic)",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 171,
+    "label": "PL2 Power Limit (Static)",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 172,
+    "label": "PL2 Power Limit (Dynamic)",
+    "unit": "W",
+    "type": "Power",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 173,
+    "label": "GPU Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 174,
+    "label": "GPU D3D Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 175,
+    "label": "GPU Video Decode 0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 176,
+    "label": "GPU Video Processing 0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 177,
+    "label": "GPU D3D Memory Dynamic",
+    "unit": "MB",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 178,
+    "label": "Current cTDP Level",
+    "unit": "",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Enhanced",
+    "sensorId": 4026542592
+  },
+  {
+    "index": 179,
+    "label": "Package C2 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 180,
+    "label": "P-core 0 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 181,
+    "label": "P-core 0 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 182,
+    "label": "P-core 1 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 183,
+    "label": "P-core 1 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 184,
+    "label": "P-core 2 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 185,
+    "label": "P-core 2 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 186,
+    "label": "P-core 3 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 187,
+    "label": "P-core 3 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 188,
+    "label": "P-core 4 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 189,
+    "label": "P-core 4 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 190,
+    "label": "P-core 5 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 191,
+    "label": "P-core 5 T1 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 192,
+    "label": "E-core 6 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 193,
+    "label": "E-core 7 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 194,
+    "label": "E-core 8 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 195,
+    "label": "E-core 9 T0 C0 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 196,
+    "label": "P-core 0 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 197,
+    "label": "P-core 1 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 198,
+    "label": "P-core 2 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 199,
+    "label": "P-core 3 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 200,
+    "label": "P-core 4 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 201,
+    "label": "P-core 5 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 202,
+    "label": "E-core 6 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 203,
+    "label": "E-core 7 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 204,
+    "label": "E-core 8 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 205,
+    "label": "E-core 9 C1 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 206,
+    "label": "P-core 0 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 207,
+    "label": "P-core 1 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 208,
+    "label": "P-core 2 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 209,
+    "label": "P-core 3 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 210,
+    "label": "P-core 4 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 211,
+    "label": "P-core 5 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 212,
+    "label": "E-core 6 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 213,
+    "label": "E-core 7 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 214,
+    "label": "E-core 8 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 215,
+    "label": "E-core 9 C6 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 216,
+    "label": "P-core 0 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 217,
+    "label": "P-core 1 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 218,
+    "label": "P-core 2 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 219,
+    "label": "P-core 3 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 220,
+    "label": "P-core 4 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 221,
+    "label": "P-core 5 C7 Residency",
+    "unit": "%",
+    "type": "Usage",
+    "group": "CPU [#0]: Intel Core i7-13620H: C-State Residency",
+    "sensorId": 4026532610
+  },
+  {
+    "index": 222,
+    "label": "Memory Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 223,
+    "label": "Memory Clock Ratio",
+    "unit": "x",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 224,
+    "label": "Tcas",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 225,
+    "label": "Trcd",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 226,
+    "label": "Trp",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 227,
+    "label": "Tras",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 228,
+    "label": "Trc",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 229,
+    "label": "Trfc",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 230,
+    "label": "Command Rate",
+    "unit": "T",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 231,
+    "label": "Gear Mode",
+    "unit": "",
+    "type": "Other",
+    "group": "Memory Timings",
+    "sensorId": 4026532609
+  },
+  {
+    "index": 232,
+    "label": "IA: PROCHOT",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 233,
+    "label": "IA: Thermal Event",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 234,
+    "label": "IA: Residency State Regulation",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 235,
+    "label": "IA: Running Average Thermal Limit",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 236,
+    "label": "IA: VR Thermal Alert",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 237,
+    "label": "IA: VR TDC",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 238,
+    "label": "IA: Electrical Design Point/Other (ICCmax,PL4,SVID,DDR RAPL)",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 239,
+    "label": "IA: Package-Level RAPL/PBM PL1",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 240,
+    "label": "IA: Package-Level RAPL/PBM PL2,PL3",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 241,
+    "label": "IA: Max Turbo Limit",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 242,
+    "label": "IA: Turbo Attenuation (MCT)",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 243,
+    "label": "IA: Thermal Velocity Boost",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 244,
+    "label": "GT: PROCHOT",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 245,
+    "label": "GT: Thermal Event",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 246,
+    "label": "GT: DDR RAPL",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 247,
+    "label": "GT: Residency State Regulation",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 248,
+    "label": "GT: Running Average Thermal Limit",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 249,
+    "label": "GT: VR Thermal Alert",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 250,
+    "label": "GT: VR TDC",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 251,
+    "label": "GT: Max VR Voltage, ICCmax, PL4",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 252,
+    "label": "GT: Domain-Level PBM PLGT",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 253,
+    "label": "GT: Package-Level RAPL/PBM PL1",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 254,
+    "label": "GT: Package-Level RAPL/PBM PL2,PL3",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 255,
+    "label": "GT: Inefficient Operation",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 256,
+    "label": "GT: Fuses limit",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 257,
+    "label": "RING: PROCHOT",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 258,
+    "label": "RING: Thermal Event",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 259,
+    "label": "RING: DDR RAPL",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 260,
+    "label": "RING: Residency State Regulation",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 261,
+    "label": "RING: Running Average Thermal Limit",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 262,
+    "label": "RING: VR Thermal Alert",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 263,
+    "label": "RING: VR TDC",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 264,
+    "label": "RING: Max VR Voltage, ICCmax, PL4",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 265,
+    "label": "RING: Package-Level RAPL/PBM PL1",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 266,
+    "label": "RING: Package-Level RAPL/PBM PL2,PL3",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "CPU [#0]: Intel Core i7-13620H: Performance Limit Reasons",
+    "sensorId": 4026534144
+  },
+  {
+    "index": 267,
+    "label": "PCH Temperature",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "MSI MS-15Q3 (Intel PCH)",
+    "sensorId": 4060151812
+  },
+  {
+    "index": 268,
+    "label": "CPU",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "MSI EC: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4042001154
+  },
+  {
+    "index": 269,
+    "label": "System",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "MSI EC: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4042001154
+  },
+  {
+    "index": 270,
+    "label": "Fan 1 (CPU)",
+    "unit": "RPM",
+    "type": "Fan",
+    "group": "MSI EC: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4042001154
+  },
+  {
+    "index": 271,
+    "label": "Fan 2 (GPU)",
+    "unit": "RPM",
+    "type": "Fan",
+    "group": "MSI EC: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4042001154
+  },
+  {
+    "index": 272,
+    "label": "Fan 3 (GPU)",
+    "unit": "RPM",
+    "type": "Fan",
+    "group": "MSI EC: MSI Cyborg 15 B13WFKG",
+    "sensorId": 4042001154
+  },
+  {
+    "index": 273,
+    "label": "SPD Hub Temperature",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 274,
+    "label": "VDD (SWA) Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 275,
+    "label": "VDDQ (SWB) Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 276,
+    "label": "VPP (SWC) Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 277,
+    "label": "1.8V VOUT Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 278,
+    "label": "1.0V VOUT Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 279,
+    "label": "VIN Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 280,
+    "label": "PMIC High Temperature",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 281,
+    "label": "PMIC Over Voltage",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 282,
+    "label": "PMIC Under Voltage",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "DDR5 DIMM [#0]: Samsung M425R2GA3EB0-CWMOD (BANK 0/Controller0-ChannelA-DIMM0)",
+    "sensorId": 4076863493
+  },
+  {
+    "index": 283,
+    "label": "Drive Temperature",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 284,
+    "label": "Drive Temperature 2",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 285,
+    "label": "Drive Temperature 3",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 286,
+    "label": "Drive Remaining Life",
+    "unit": "%",
+    "type": "Usage",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 287,
+    "label": "Drive Available Spare",
+    "unit": "%",
+    "type": "Usage",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 288,
+    "label": "Drive Failure",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 289,
+    "label": "Drive Warning",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 290,
+    "label": "Total Host Writes",
+    "unit": "GB",
+    "type": "Other",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 291,
+    "label": "Total Host Reads",
+    "unit": "GB",
+    "type": "Other",
+    "group": "S.M.A.R.T.: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532096
+  },
+  {
+    "index": 292,
+    "label": "Read Activity",
+    "unit": "%",
+    "type": "Usage",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 293,
+    "label": "Write Activity",
+    "unit": "%",
+    "type": "Usage",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 294,
+    "label": "Total Activity",
+    "unit": "%",
+    "type": "Usage",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 295,
+    "label": "Read Rate",
+    "unit": "MB/s",
+    "type": "Other",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 296,
+    "label": "Write Rate",
+    "unit": "MB/s",
+    "type": "Other",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 297,
+    "label": "Read Total",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 298,
+    "label": "Write Total",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Drive: Sandisk PC SN5000S SDEPNSJ-512G-1132 (25243K801169) [C:]",
+    "sensorId": 4026532097
+  },
+  {
+    "index": 299,
+    "label": "GPU Temperature",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 300,
+    "label": "GPU Memory Junction Temperature",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 301,
+    "label": "GPU Thermal Limit",
+    "unit": "°C",
+    "type": "Temperature",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 302,
+    "label": "GPU Core Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 303,
+    "label": "GPU FBVDD Input Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 304,
+    "label": "GPU 12VHPWR Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 305,
+    "label": "GPU Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 306,
+    "label": "GPU FBVDD Input Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 307,
+    "label": "GPU Core (NVVDD) Input Power (sum)",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 308,
+    "label": "GPU Misc0 Input Power (sum)",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 309,
+    "label": "GPU 12VHPWR Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 310,
+    "label": "GPU PCIe +3.3V Input Power (est)",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 311,
+    "label": "GPU Core (NVVDD) Output Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 312,
+    "label": "GPU Core (NVVDD) Output Power",
+    "unit": "W",
+    "type": "Power",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 313,
+    "label": "GPU Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 314,
+    "label": "GPU Memory Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 315,
+    "label": "GPU Video Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 316,
+    "label": "GPU Effective Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 317,
+    "label": "GPU Crossbar Clock",
+    "unit": "MHz",
+    "type": "Clock",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 318,
+    "label": "GPU Core Load",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 319,
+    "label": "GPU Memory Controller Load",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 320,
+    "label": "GPU Video Engine Load",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 321,
+    "label": "GPU Bus Load",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 322,
+    "label": "GPU Memory Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 323,
+    "label": "GPU D3D Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 324,
+    "label": "GPU Video Decode 0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 325,
+    "label": "GPU Video Encode 0 Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 326,
+    "label": "GPU VR Usage",
+    "unit": "%",
+    "type": "Usage",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 327,
+    "label": "Performance Limit - Power",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 328,
+    "label": "Performance Limit - Thermal",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 329,
+    "label": "Performance Limit - Reliability Voltage",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 330,
+    "label": "Performance Limit - Max Operating Voltage",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 331,
+    "label": "Performance Limit - Utilization",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 332,
+    "label": "Performance Limit - SLI GPUBoost Sync",
+    "unit": "Yes/No",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 333,
+    "label": "Receiver Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 334,
+    "label": "Replay Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 335,
+    "label": "Replay Rollover Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 336,
+    "label": "Bad DLLP Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 337,
+    "label": "Bad TLP Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 338,
+    "label": "LCRC Error Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 339,
+    "label": "NAKs Sent Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 340,
+    "label": "NAKs Received Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 341,
+    "label": "Recovery Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 342,
+    "label": "Correctable Error Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 343,
+    "label": "Non-Fatal Error Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 344,
+    "label": "Fatal Error Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 345,
+    "label": "Unsupported Request Count",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 346,
+    "label": "PCIe Lane 0 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 347,
+    "label": "PCIe Lane 1 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 348,
+    "label": "PCIe Lane 2 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 349,
+    "label": "PCIe Lane 3 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 350,
+    "label": "PCIe Lane 4 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 351,
+    "label": "PCIe Lane 5 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 352,
+    "label": "PCIe Lane 6 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 353,
+    "label": "PCIe Lane 7 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 354,
+    "label": "PCIe Lane 8 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 355,
+    "label": "PCIe Lane 9 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 356,
+    "label": "PCIe Lane 10 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 357,
+    "label": "PCIe Lane 11 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 358,
+    "label": "PCIe Lane 12 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 359,
+    "label": "PCIe Lane 13 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 360,
+    "label": "PCIe Lane 14 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 361,
+    "label": "PCIe Lane 15 Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 362,
+    "label": "GPU Memory Available",
+    "unit": "MB",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 363,
+    "label": "GPU Memory Allocated",
+    "unit": "MB",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 364,
+    "label": "GPU D3D Memory Dedicated",
+    "unit": "MB",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 365,
+    "label": "GPU D3D Memory Dynamic",
+    "unit": "MB",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 366,
+    "label": "PCIe Link Speed",
+    "unit": "GT/s",
+    "type": "Other",
+    "group": "GPU [#1]: NVIDIA GeForce RTX 5060 Laptop",
+    "sensorId": 3758104576
+  },
+  {
+    "index": 367,
+    "label": "Battery Voltage",
+    "unit": "V",
+    "type": "Voltage",
+    "group": "Battery: MSI BIF0_9",
+    "sensorId": 4026579456
+  },
+  {
+    "index": 368,
+    "label": "Remaining Capacity",
+    "unit": "Wh",
+    "type": "Other",
+    "group": "Battery: MSI BIF0_9",
+    "sensorId": 4026579456
+  },
+  {
+    "index": 369,
+    "label": "Charge Level",
+    "unit": "%",
+    "type": "Other",
+    "group": "Battery: MSI BIF0_9",
+    "sensorId": 4026579456
+  },
+  {
+    "index": 370,
+    "label": "Charge Rate",
+    "unit": "W",
+    "type": "Other",
+    "group": "Battery: MSI BIF0_9",
+    "sensorId": 4026579456
+  },
+  {
+    "index": 371,
+    "label": "Wear Level",
+    "unit": "%",
+    "type": "Other",
+    "group": "Battery: MSI BIF0_9",
+    "sensorId": 4026579456
+  },
+  {
+    "index": 372,
+    "label": "Framerate Presented (avg)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 373,
+    "label": "Framerate Presented (99%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 374,
+    "label": "Framerate Presented (1%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 375,
+    "label": "Framerate Presented (0.1%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 376,
+    "label": "Framerate Presented (1% low)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 377,
+    "label": "Framerate Presented (0.1% low)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 378,
+    "label": "Framerate Displayed (avg)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 379,
+    "label": "Framerate Displayed (99%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 380,
+    "label": "Framerate Displayed (1%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 381,
+    "label": "Framerate Displayed (0.1%)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 382,
+    "label": "Framerate Displayed (1% low)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 383,
+    "label": "Framerate Displayed (0.1% low)",
+    "unit": "FPS",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 384,
+    "label": "Frame Time Presented (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 385,
+    "label": "Frame Time Presented (99%)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 386,
+    "label": "Frame Time Presented (1%)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 387,
+    "label": "Frame Time Presented (0.1%)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 388,
+    "label": "Frame Time Displayed (1% high)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 389,
+    "label": "Frame Time Displayed (0.1% high)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 390,
+    "label": "GPU Busy (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 391,
+    "label": "GPU Wait (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 392,
+    "label": "CPU Busy (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 393,
+    "label": "CPU Wait (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 394,
+    "label": "Animation Error (avg)",
+    "unit": "ms",
+    "type": "Other",
+    "group": "PresentMon",
+    "sensorId": 4026535920
+  },
+  {
+    "index": 395,
+    "label": "Total DL",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Network: Intel Wi-Fi 6E AX211 160MHz",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 396,
+    "label": "Total UP",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Network: Intel Wi-Fi 6E AX211 160MHz",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 397,
+    "label": "Current DL rate",
+    "unit": "KB/s",
+    "type": "Other",
+    "group": "Network: Intel Wi-Fi 6E AX211 160MHz",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 398,
+    "label": "Current UP rate",
+    "unit": "KB/s",
+    "type": "Other",
+    "group": "Network: Intel Wi-Fi 6E AX211 160MHz",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 399,
+    "label": "Total DL",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Network: RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 400,
+    "label": "Total UP",
+    "unit": "MB",
+    "type": "Other",
+    "group": "Network: RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 401,
+    "label": "Current DL rate",
+    "unit": "KB/s",
+    "type": "Other",
+    "group": "Network: RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 402,
+    "label": "Current UP rate",
+    "unit": "KB/s",
+    "type": "Other",
+    "group": "Network: RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC",
+    "sensorId": 4026591744
+  },
+  {
+    "index": 403,
+    "label": "Total Errors",
+    "unit": "",
+    "type": "Other",
+    "group": "Windows Hardware Errors (WHEA)",
+    "sensorId": 4026535584
+  }
+]
