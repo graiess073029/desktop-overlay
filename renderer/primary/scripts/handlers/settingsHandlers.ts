@@ -30,7 +30,6 @@ const clearSettingsOnHold = () => {
 }
 
 const saveSettings = () => {
-  debugger;
   if (settingsOnHold.textColor?.length) changeColors(settingsOnHold.textColor);
   if(settingsOnHold.appSize)  iconSizeEventHandler(new Event(""), settingsOnHold.appSize);
   if(settingsOnHold.fontSize) fontSizeEventHandler( new Event(""),settingsOnHold.fontSize);
@@ -52,8 +51,6 @@ export const addSettingsHandlers = () => {
   DOMElements.mode?.addEventListener("click", (event) => {
     DOMElements.blur.style.display = "block";
     DOMElements.modesDiv.style.display = "flex";
-    DOMElements.background.style.filter = "blur(8px)";
-    DOMElements.root_inner.style.filter = "blur(8px)";
   });
 
   DOMElements.blur?.addEventListener("click", (event) => {
@@ -65,8 +62,6 @@ export const addSettingsHandlers = () => {
       DOMElements.settings.style.display = "none";
       DOMElements.appDeleter.style.display = "none";
       DOMElements.appNameSetter.style.display = "none"
-      DOMElements.background.style.filter = "blur(0px)";
-      DOMElements.root_inner.style.filter = "blur(0px)";
       clearSettingsOnHold();
     }
   });
@@ -93,6 +88,7 @@ export const addSettingsHandlers = () => {
   });
 
   DOMElements.bgAddBtn?.addEventListener("click", async () => {
+    DOMElements.bgAddBtn.disabled = true;
     let path = await window.api.pickFile();
     if (path) {
       spawnLoading();
@@ -102,6 +98,7 @@ export const addSettingsHandlers = () => {
         window.api.refreshWindows();
       });
     }
+    DOMElements.bgAddBtn.disabled = false;
   })
 
   DOMElements.overlayNumber?.addEventListener('input', OverlayEventHandler)

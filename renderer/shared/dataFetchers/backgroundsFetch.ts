@@ -23,9 +23,7 @@ export const fetchBackgrounds = async (): Promise<BackgroundObject[] | null> => 
 
 
 export const InitializeBackground = async (): Promise<BgData | Error> => {
-
-  debugger;
-
+  
   const backgrounds = await fetchBackgrounds();
 
   let bgIndex : string | number | null = window.localStorage.getItem("bgIndex");

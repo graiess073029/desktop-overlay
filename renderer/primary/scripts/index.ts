@@ -16,6 +16,7 @@ import { updateUi } from "../../shared/sensors/updateUi.js";
 
 
 
+
 const init = async () => {
   try {
 
@@ -37,10 +38,29 @@ const init = async () => {
     });
     const mode = (window.localStorage.getItem("mode") || "normal") as keyof ModeObject;
     setMode(mode);
+
+    let lastMouseMove = Date.now();
+    let appIsFocused = true;
+
+    document.addEventListener('mousemove', () => {
+      lastMouseMove = Date.now();
+      appIsFocused = true;
+      DOMElements.videoBg.paused ? DOMElements.videoBg.play() : null;
+    });
+
+    setInterval(() => {
+      const idleTime = Date.now() - lastMouseMove;
+      if (idleTime > 60000 && appIsFocused && !DOMElements.videoBg.paused) {
+        appIsFocused = false;
+        DOMElements.videoBg.pause();
+      }
+    }, 1000);
+
+
     let lastUpdate: Date = new Date();
     window.api.onDiagnosticUpdate(async (data: SensorsData) => {
       lastUpdate = new Date();
-      if (data && !mappingSensors) await updateUi(data)
+      if (data && !mappingSensors && appIsFocused) await updateUi(data)
     })
 
     setInterval(() => {

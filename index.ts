@@ -8,7 +8,6 @@ import { addBackground } from './services/backgrounds/addBackground';
 import { getDataSample, getLatestData, sharedMemReader } from './services/sensors/sharedMemReader';
 import { mapSensorsWithAI } from './services/sensors/sensorMapper';
 import { getDiskData } from './services/sensors/getDiscData';
-import { DiscData } from './types';
 import { deleteBackground } from './services/backgrounds/deleteBackground';
 import { deleteApp } from './services/apps/deleteApp';
 import { addApp, readDesktop } from './services/apps/addApp';
@@ -20,6 +19,13 @@ import { stopTranslucentTB } from './services/transluscentTB/stop';
 import { checkSensorMapping } from './services/sensors/checkMapping';
 import { verifyDataFiles } from './services/checkCacheFiles';
 import { createTray } from './services/tray/createTray';
+import { setGpuPreference } from './setGpu';
+
+app.commandLine.appendSwitch('disable-gpu-sandbox');
+app.commandLine.appendSwitch('enable-zero-copy');
+app.commandLine.appendSwitch('js-flags', '--max-old-space-size=256');
+
+setGpuPreference();
 
 const gotLock = app.requestSingleInstanceLock();
 
@@ -49,6 +55,25 @@ const installedHwnds: bigint[] = [];
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
+let sensorInterval: NodeJS.Timeout | null = null;
+let isAnyWindowVisible = true;
+let pollingRateMs = 1000;
+
+const startSensorPolling = () => {
+  if (sensorInterval) clearInterval(sensorInterval);
+  sensorInterval = setInterval(async () => {
+    if (!isAnyWindowVisible) return;
+    await sharedMemReader();
+    getLatestData();
+  }, pollingRateMs);
+};
+
+const updatePollingRate = () => {
+  const anyVisible = BrowserWindow.getAllWindows().some(w => w.isVisible());
+  isAnyWindowVisible = anyVisible;
+  pollingRateMs = anyVisible ? 2000 : 5000;
+};
+
 const createWindow = () => {
   const displays = electronScreen.getAllDisplays();
   displayBounds = displays;
@@ -58,6 +83,7 @@ const createWindow = () => {
 
     const win = new BrowserWindow({
       x, y, width, height,
+      type: 'toolbar',           // ← NEW: special DWM layer for overlays
       movable: false,
       frame: false,
       alwaysOnTop: false,
@@ -68,22 +94,29 @@ const createWindow = () => {
       fullscreen: false,
       roundedCorners: false,
       show: false,
-      focusable: false,          // prevent focus stealing
+      focusable: true,
+      transparent: true,         // ← NEW: cleaner DWM compositing
+      hasShadow: false,          // ← NEW: no shadow artifacts
+      thickFrame: false,         // ← NEW: no resize border
       webPreferences: {
         preload: path.join(__dirname, 'preload', 'preload.js'),
         nodeIntegration: false,
         contextIsolation: true,
         sandbox: true,
-        backgroundThrottling: false,
+        backgroundThrottling: false,  // ← RESTORED: safe now, prevents renderer freeze
         additionalArguments: [
           `--display-index=${index}`,
-          `--display-bounds=${JSON.stringify(display.bounds)}`,
           `--display-id=${display.id}`
         ]
       }
     });
 
     win.once('ready-to-show', () => win.show());
+
+    win.on('hide', updatePollingRate);
+    win.on('show', updatePollingRate);
+    win.on('minimize', updatePollingRate);
+    win.on('restore', updatePollingRate);
 
     display.bounds.x === 0 && display.bounds.y === 0
       ? win.loadFile(path.join(__dirname, "renderer", 'primary', 'index.html')).catch(e => console.error(e))
@@ -96,7 +129,6 @@ const createWindow = () => {
     kiosk.installOverlay(hwnd, index);
     installedHwnds.push(hwnd);
 
-    win.webContents.setBackgroundThrottling(false);
   });
 };
 
@@ -307,15 +339,13 @@ const cleanupNativeTweaks = () => {
   }
 };
 
+
 app.whenReady().then(async () => {
   try {
-    setInterval(async () => {
-      await sharedMemReader();
-      getLatestData();
-    }, 1000);
     await verifyDataFiles();
     await checkSensorMapping();
     await startHWiNFO();
+    startSensorPolling();
     createWindow();
     tray = createTray();
     await startTranslucentTB();

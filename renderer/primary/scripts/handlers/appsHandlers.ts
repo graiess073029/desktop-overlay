@@ -10,6 +10,7 @@ export const addAppsHandlers = () => {
     DOMElements.settings.style.display = "none";
 
     DOMElements.appsAddBtn.addEventListener("click", async (event) => {
+        DOMElements.appsAddBtn.disabled = true;
         let path = await window.api.pickApp();
         if (path) {
 
@@ -39,6 +40,7 @@ export const addAppsHandlers = () => {
 
 
         }
+        DOMElements.appsAddBtn.disabled = false;
     });
 
     DOMElements.appsDeleteBtn.addEventListener("click", async (event) => {

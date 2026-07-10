@@ -18,18 +18,13 @@
     "dist:dir": "npm run build && electron-builder --win --dir",
     "postinstall": "electron-builder install-app-deps"
   },
-  "author": "Li 7wek",
+  "author": "",
   "license": "",
   "dependencies": {
-    "csv-parser": "^3.2.0",
-    "datatables.net-dt": "^2.3.5",
     "ffmpeg-static": "^5.3.0",
     "fluent-ffmpeg": "^2.1.3",
     "hwinfo-reader": "^1.0.1",
-    "pidusage": "^4.0.1",
-    "ps-list": "^9.0.0",
-    "sharp": "^0.35.2",
-    "systeminformation": "^5.27.11",
+    "sharp": "^0.35.3",
     "tail": "^2.2.6"
   },
   "devDependencies": {
@@ -61,7 +56,8 @@
     "asar": true,
     "asarUnpack": [
       "addon/**/*",
-      "dist/assets/**/*"
+      "dist/assets/**/*",
+      "node_modules/ffmpeg-static"
     ],
     "extraResources": [
       {
@@ -100,7 +96,7 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
-      "createStartMenuShortcut": true,
+      "createStartMenuShortcut": true,      
       "shortcutName": "Desktop Overlay"
     },
     "portable": {

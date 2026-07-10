@@ -18,7 +18,7 @@ const DOMElements = {
   fontSizeRange: document.getElementById("fontSizeRange") as HTMLInputElement,
   fontSizeNumber: document.getElementById("fontSizeNumber") as HTMLInputElement,
   bgSelectBtn: document.getElementById("bgSelectBtn") as HTMLElement,
-  bgAddBtn: document.getElementById("bgAddBtn") as HTMLElement,
+  bgAddBtn: document.getElementById("bgAddBtn") as HTMLButtonElement,
   bgDeleteBtn: document.getElementById("bgDeleteBtn") as HTMLElement,
   overlayRange: document.getElementById("overlayRange") as HTMLInputElement,
   overlayNumber: document.getElementById("overlayNumber") as HTMLInputElement,
@@ -103,7 +103,7 @@ const DOMElements = {
   bgPlus_delete: document.getElementById("bgPlus_delete") as HTMLElement,
   bgDeleter: document.querySelector("#deleteBg") as HTMLElement,
 
-  appsAddBtn: document.getElementById("appsAddBtn") as HTMLElement,
+  appsAddBtn: document.getElementById("appsAddBtn") as HTMLButtonElement,
   appsDeleteBtn: document.getElementById("appsDeleteBtn") as HTMLElement,
   appDeleter: document.querySelector(".appDeleter") as HTMLElement,
   appsToDelete: document.getElementById("appsToDelete") as HTMLElement,

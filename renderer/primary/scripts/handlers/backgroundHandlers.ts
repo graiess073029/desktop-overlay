@@ -77,17 +77,13 @@ export const addBgHandlers = (bgData: BgData) => {
             }
 
             // Only compute new index AFTER successful deletion
-            let newIndex = bgData.bgIndex;
 
-            if (bgDeletingIndex < bgData.bgIndex) {
-                newIndex = bgData.bgIndex - 1;
-            } else if (bgDeletingIndex === bgData.bgIndex) {
-                // If we deleted the current bg, clamp to valid range
-                // lenBackgrounds was the old length, so new max index is lenBackgrounds - 2
-                newIndex = Math.min(bgData.bgIndex, bgData.lenBackgrounds - 2);
-                newIndex = Math.max(0, newIndex);
-            }
-            // If bgDeletingIndex > bgData.bgIndex, index stays the same
+            debugger;
+            
+            let newIndex = bgData.bgIndex - 1;
+
+            if (newIndex < 0) newIndex = bgData.lenBackgrounds - 2;
+            if (bgData.bgIndex !== bgDeletingIndex) newIndex = bgData.bgIndex - 1;
 
             window.localStorage.setItem("bgIndex", newIndex.toString());
             window.api.refreshWindows();

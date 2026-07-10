@@ -7,8 +7,6 @@ export const injectApps = async (): Promise<void> => {
 
   try {
 
-    debugger;
-
     // 1. Get scale (Added a fallback to 1 just in case the CSS var is missing)
     const scaleString = getComputedStyle(document.documentElement).getPropertyValue('--ui-scale').trim();
     const uiScale = parseFloat(scaleString) || 1;

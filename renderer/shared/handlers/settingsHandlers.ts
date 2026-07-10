@@ -29,8 +29,6 @@ export const changeFontSize = (size: string) => {
 
 export const iconSizeEventHandler = (event: Event, size?: number) => {
   
-  debugger
-
   if(size) {
     changeIconSize(size + "px");
     return

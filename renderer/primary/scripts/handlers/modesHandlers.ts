@@ -13,8 +13,6 @@ export const setMode = (mode: keyof ModeObject) => {
 
     DOMElements.blur.style.display = "none";
     DOMElements.modesDiv.style.display = "none";
-    DOMElements.background.style.filter = "blur(0px)";
-    DOMElements.root_inner.style.filter = "blur(0px)";
     DOMElements.modeText.textContent = mode;
     DOMElements.modeIcon.innerHTML = modesIcons[mode];
 

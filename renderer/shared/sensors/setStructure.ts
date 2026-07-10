@@ -258,3 +258,16 @@ export const setGpuStructure = (sensorsMap: LabelMapping,specs : any): void => {
 
 }
 
+export const setBatteryDisplay = (sensorsMap: LabelMapping): void => {
+
+    if (sensorsMap.battery.level != null) {
+        DOMElements.batteryLevel.style.display = "flex";
+        DOMElements.batteryIcon.style.display = "flex";
+    }
+
+    else {
+        DOMElements.batteryLevel.style.display = "none";
+        DOMElements.batteryIcon.style.display = "none";
+    }
+
+}

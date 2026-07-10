@@ -39,10 +39,7 @@ export const verifyDataFiles = async () => {
   await ensureDir(path.join(dataFolder, 'assets', 'images'));
   await ensureDir(path.join(dataFolder, 'assets', 'images', 'appsIcons'));
 
-  await ensureFile(path.join(dataFolder, 'data.csv'), '');
   await ensureFile(path.join(dataFolder, 'sensorMapping.json'), JSON.stringify({}));
-
-
 
   if (!(await fileExists(path.join(dataFolder, 'data.JSON')))) {
     await writeFile(path.join(dataFolder, 'data.JSON'), "{}");

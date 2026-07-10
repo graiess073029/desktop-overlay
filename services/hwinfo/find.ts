@@ -1,10 +1,7 @@
 import path from "path";
-import { getAddonPath, fileExists } from "../exposeDataPath";
+import { fileExists } from "../exposeDataPath";
 
 export const findHWiNFO64 = async (): Promise<string | null> => {
-  // 1. Check bundled addon path (works in dev + packaged)
-  const bundled = getAddonPath('addons', 'HWiNFO64.EXE');
-  if (await fileExists(bundled)) return bundled;
 
   // 2. Fallback to system installs
   const commonPaths = [
@@ -19,6 +16,18 @@ export const findHWiNFO64 = async (): Promise<string | null> => {
     // Portable / custom locations
     path.join('C:', 'HWiNFO64', 'HWiNFO64.EXE'),
     path.join('C:', 'Tools', 'HWiNFO64', 'HWiNFO64.EXE'),
+
+    path.join(process.env.PROGRAMFILES || '', 'HWiNFO32', 'HWiNFO32.EXE'),
+    path.join(process.env['PROGRAMFILES(X86)'] || '', 'HWiNFO32', 'HWiNFO32.EXE'),
+    path.join(process.env.LOCALAPPDATA || '', 'Programs', 'HWiNFO32', 'HWiNFO32.EXE'),
+    path.join('C:', 'Program Files', 'HWiNFO32', 'HWiNFO32.EXE'),
+    path.join('C:', 'Program Files (x86)', 'HWiNFO32', 'HWiNFO32.EXE'),
+    // HWiNFO est souvent installé dans un dossier sans version
+    path.join(process.env.PROGRAMFILES || '', 'HWiNFO', 'HWiNFO32.EXE'),
+    path.join(process.env['PROGRAMFILES(X86)'] || '', 'HWiNFO', 'HWiNFO32.EXE'),
+    // Portable / custom locations
+    path.join('C:', 'HWiNFO32', 'HWiNFO32.EXE'),
+    path.join('C:', 'Tools', 'HWiNFO32', 'HWiNFO32.EXE'),
   ];
 
   for (const p of commonPaths) {
