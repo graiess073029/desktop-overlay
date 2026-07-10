@@ -36,33 +36,11 @@ The first setup includes an AI-assisted sensor detection system that automatical
 
 Add shortcuts directly to your desktop overlay and launch your favorite applications, games, or scripts.
 
-Supported formats:
-
-* `.exe`
-* `.lnk`
-* `.bat`
-* `.cmd`
-* `.ps1`
-
 ---
 
 ## Dynamic Backgrounds
 
 Customize your desktop with static or animated backgrounds.
-
-Supported formats:
-
-Images:
-
-* `.jpg`
-* `.png`
-* `.webp`
-
-Videos:
-
-* `.mp4`
-* `.webm`
-
 Video backgrounds are processed to balance quality and performance.
 
 ---
@@ -104,7 +82,7 @@ The goal is to keep the overlay lightweight while still providing real-time info
 
 ## Operating System
 
-* Windows 10 or Windows 11 (64-bit)
+* Windows 11 (64-bit)
 
 ## HWiNFO64
 
@@ -173,14 +151,6 @@ Make sure:
 * HWiNFO64 is running
 * Shared Memory Support is enabled
 * HWiNFO is still providing sensor data
-
----
-
-## Video backgrounds are using too many resources
-
-Check that your graphics drivers are updated.
-
-The application uses hardware acceleration when available to keep video playback efficient.
 
 ---
 
